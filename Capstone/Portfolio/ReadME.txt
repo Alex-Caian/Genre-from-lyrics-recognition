@@ -20,7 +20,7 @@ External undocumented work exists and may be made available upon request. Author
 
 For more guidance, go back to the main branch and follow the ClickME file present there.
 
-For contact: ac17176@alumni.bristol.ac.uk and rigaud_ines@hotmail.com.
+For contact: ac17176@alumni.bristol.ac.uk and rigaud.ines@gmail.com
 
 ###############################
 ###############################
