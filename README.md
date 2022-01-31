@@ -12,10 +12,26 @@
  We have recorded the original data [in our own Original Data folder](https://github.com/Alex-Caian/Genre-from-lyrics-recognition/tree/main/Capstone/Data/Original%20Data) for ease of access. All ulterior processed & enriched data derived can also be found [in the Data folder](https://github.com/Alex-Caian/Genre-from-lyrics-recognition/tree/main/Capstone/Data/Processed%20Data).
  
  ## Approach
-  We've decided to explore two different means of transforming the data into an interpretable, numerical context: vectorisation and sequentialisation. For the former, given the extensive memory capacity, we've used a common low-complexity technique, i.e. multinomial logistic regression. For the latter, we could explore more advanced deep techniques, namely neural networks.
+  We've decided to explore two different means of transforming the data into an interpretable, numerical context: vectorisation and sequentialisation. For the former engineering, given the extensive memory capacity, we've used common, low-complexity techniques, i.e. multinomial logistic regression and random forests respectively. For the latter, we could explore more advanced deep techniques, namely neural networks.
   
   However, the expected lack of context between sentences (verses) in songs, unlike the case for texts designed for coherency such as novels or e-mails resulted in a self-imposed limitation of our approaches to simpler types of NN. We've therefore considered two models: An [LSTM RNN](https://en.wikipedia.org/wiki/Long_short-term_memory) (Long Short Term Memory - Recurrent Neural Network) and a simple [MLP](https://machinelearningmastery.com/when-to-use-mlp-cnn-and-rnn-neural-networks/#:~:text=Multilayer%20Perceptrons%2C%20or%20MLPs%20for,also%20called%20the%20visible%20layer.) (Multi-Layer Perceptron).
   
   Finally, all the models were individually considered with their benefits and drawbacks, and an ensemble was constructed. The [final algorithm](https://github.com/Alex-Caian/Genre-from-lyrics-recognition/blob/main/Capstone/Portfolio/7%20-%20Algorithm%20%2B%20TDD.ipynb) can be found as the last notebook in our [main work](https://github.com/Alex-Caian/Genre-from-lyrics-recognition/tree/main/Capstone/Portfolio) folder.
   
   ## Results
+ Considering the implicit shortcomings of the data provided (namely size and imbalance), the LSTM proved to have potential on better suited data, but lacked performance on ours. On the other hand, the [LogReg implementation]() achieved a remarkable performance of 75%, already surpassing the set objective; with similar performances from the [RF implementation](). 
+ 
+ Moreover, the [MLP implementation]() presented varied response in terms of how many words a song presented. Most new words would initially be transcribed as noise, to be later transformed into signal when a sufficient threshold for the minimum number of words in a song was succesfully met. This resulted in performances ranging from a worst of 36% to a best of 92%, which led us embrace an ensemble of our best performing models based on these criteria. The mathematical implications of this phenomenon are [better recorded here](https://www.mathcha.io/editor/4Qmgou4GfLpHld1wQoSWg9vYIGXngyxSlBw1GL).
+ 
+  Overall, our final performance ranges from 75% - 92%, which makes the proposed algorithm better than the previous baselines. These numbers can be further improved, mainly by addressing the aforementioned issues with the data: size and class balance. The latter was especially damaging when it came to the Pop genre, and could be partially addressed by simply introducing more songs within the training. Our thorough performance gain analyses have indicated that variation across songs will be more than accounted for by our model, so simply feeding it more data would suffice for a continuous improvement.
+  
+  Lastly, this would only work until overfit is encountered. Methods to combat that would rely on more extensive insights into the structure of our chosen models, and finding a fit that could dynamically account for new data in a streamlining fashion _without_ reaching an overfit stage.
+  
+  ## Contact
+ All rights for this work go to:
+ 
+ [Alex Caian] - Contact at ac17176@alumni.bristol.ac.uk
+ 
+ [Inès Rigaud] - Contact at rigaud.ines@gmail.com
+ 
+ For questions regarding records or right of external use use the contact points above.
