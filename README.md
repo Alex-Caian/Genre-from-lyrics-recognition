@@ -30,8 +30,8 @@
   ## Contact
  All rights for this work go to:
  
- [Alex Caian] - Contact at ac17176@alumni.bristol.ac.uk
+ [Alex Caian](https://github.com/Alex-Caian) - Contact at ac17176@alumni.bristol.ac.uk
  
- [Inès Rigaud] - Contact at rigaud.ines@gmail.com
+ [Inès Rigaud]() - Contact at rigaud.ines@gmail.com
  
  For questions regarding records or right of external use use the contact points above.
