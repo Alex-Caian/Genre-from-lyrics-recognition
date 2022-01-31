@@ -16,4 +16,6 @@
   
   However, the expected lack of context between sentences (verses) in songs, unlike the case for texts designed for coherency such as novels or e-mails resulted in a self-imposed limitation of our approaches to simpler types of NN. We've therefore considered two models: An [LSTM RNN](https://en.wikipedia.org/wiki/Long_short-term_memory) (Long Short Term Memory - Recurrent Neural Network) and a simple [MLP](https://machinelearningmastery.com/when-to-use-mlp-cnn-and-rnn-neural-networks/#:~:text=Multilayer%20Perceptrons%2C%20or%20MLPs%20for,also%20called%20the%20visible%20layer.) (Multi-Layer Perceptron).
   
-  Finally, all the models were individually considered with their benefits and drawbacks, and an ensemble was constructed. The [final algorithm]() can be found as the last notebook in our [main work](https://github.com/Alex-Caian/Genre-from-lyrics-recognition/tree/main/Capstone/Portfolio) folder.
+  Finally, all the models were individually considered with their benefits and drawbacks, and an ensemble was constructed. The [final algorithm](https://github.com/Alex-Caian/Genre-from-lyrics-recognition/blob/main/Capstone/Portfolio/7%20-%20Algorithm%20%2B%20TDD.ipynb) can be found as the last notebook in our [main work](https://github.com/Alex-Caian/Genre-from-lyrics-recognition/tree/main/Capstone/Portfolio) folder.
+  
+  ## Results
