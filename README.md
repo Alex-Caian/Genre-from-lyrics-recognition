@@ -33,4 +33,4 @@
  
  [Inès Rigaud](https://github.com/rigins) - Contact at rigaud.ines@gmail.com
  
- For questions regarding records or right of external use use the contact points above.
+ For questions regarding records or right of external use reference the contact points above.
